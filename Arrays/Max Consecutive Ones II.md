@@ -27,6 +27,8 @@ The max number of consecutive ones is 4.
 * nums[i] is either 0 or 1.
 
 # Solution (Javascript)
+* one pointer: track two sets of ones, current set and previous set, resetting previous to 0 if 2 consecutive 0s are encountered. Add 1 if at least one 0 is encountered:
+
 ```
 /**
  * @param {number[]} nums
